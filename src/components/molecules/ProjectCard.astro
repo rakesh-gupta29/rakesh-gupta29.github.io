@@ -1,0 +1,62 @@
+---
+import IconAnchor from "@atoms/anchors/IconAnchor.astro";
+import TextAnchor from "@atoms/anchors/TextAnchor.astro";
+
+const { data } = Astro.props;
+const { title, subTitle, coverImage, demoLink, tags } = data;
+---
+
+<article
+  class="grid lg:grid-cols-7 gap-x-10 gap-y-3 border-1 border-solid border-gray group"
+>
+  <div class="col-start-1 lg:col-end-4 h-80 md:h-[22rem] 2xl:h-96 lg:p-3">
+    <img
+      src={coverImage}
+      alt={title}
+      class="h-full w-full object-cover object-center"
+    />
+  </div>
+  <div
+    class="lg:col-end-8 lg:col-start-4 px-3 pt-1 pb-10 md:pb-6 lg:pb-10 md:py-6 lg:py-8 xl:py-10"
+  >
+    <h3 class="font-satoshi-semibold text-dark pb-3">{title}</h3>
+    <p class="text-dark font-satoshi text-opacity-80 max-w-xl">
+      {subTitle}
+    </p>
+    <div
+      class="flex flex-nowrap mt-3 lg:mt-5 items-center font-satoshi-semibold text-dark text-opacity-80"
+    >
+      {
+        tags.map((elem: string) => {
+          return (
+            <>
+              <span class="divider-dot first:hidden" />
+              <span class="capitalize">{elem} </span>
+            </>
+          );
+        })
+      }
+    </div>
+    <div
+      class="flex mr-auto flex-nowrap items-center mt-4 md:mt-6 lg:mt-8 gap-2"
+    >
+      <a
+        target="_blank"
+        href={demoLink}
+        aria-label={` Visit ${title} website`}
+        class="font-satoshi-bold pb-2 relative text-lg flex flex-nowrap items-end gap-2"
+      >
+        Visit
+        <div
+          class="absolute top-auto bottom-0 left-0 bg-dark w-0 group-hover:w-full transition-all duration-200 ease-in-out h-[1px]"
+        >
+        </div>
+      </a>
+      <img
+        src="/img/externalLink.svg"
+        alt="external link"
+        class="h-6 transition-all duration-200 ease-in-out group-focus:opacity-100 mb-2"
+      />
+    </div>
+  </div>
+</article>

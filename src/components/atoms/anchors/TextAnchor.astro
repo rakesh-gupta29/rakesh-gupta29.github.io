@@ -1,0 +1,29 @@
+---
+interface Props {
+  text: string;
+  href: string;
+  size?: "sm" | "base" | "lg" | "xl" | "2xl";
+  ariaLabel?: string;
+  target?: "_self" | "_blank" | "_parent";
+  isLight?: boolean;
+}
+const {
+  ariaLabel,
+  href,
+  text,
+  target = "_self",
+  size = "xl",
+  isLight = false,
+} = Astro.props;
+---
+
+<a
+  href={href}
+  target={target}
+  aria-label={ariaLabel}
+  class={` font-satoshi focus:outline-none outline-none focus:underline underline-offset-4 text-${size} ${
+    isLight ? "text-white" : "hover:text-blue text-dark"
+  }`}
+>
+  {text}</a
+>

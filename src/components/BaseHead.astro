@@ -1,0 +1,50 @@
+---
+// Import the global.css file here so that it is included on
+// all pages through the use of the <BaseHead /> component.
+import "../styles/global.css";
+
+export interface Props {
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const { title, description, image = "/img/logo.png" } = Astro.props;
+---
+
+<link rel="icon" type="image/svg+xml" href="/img/logo.png" />
+
+<title>{title}</title>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="title" content={title} />
+<meta name="icon" content={new URL("/img/logo.png", canonicalURL)} />
+<meta name="description" content={description} />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="light" />
+<meta
+  name="keywords"
+  content="personal portfolio,rakesh gupta,portolio,website, frontend developer, indore"
+/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@guptaji_123" />
+<meta name="twitter:creator" content="@guptaji_123" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={new URL("/img/logo.png", canonicalURL)} />
+
+<meta property="og:title" content={title} />
+<meta property="og:type" content="Perosonal Website" />
+<meta property="og:url" content="https://rakesh-gupta29.github.io/" />
+<meta property="og:site_name" content="Rakesh Gupta" />
+<meta property="og:image" content={new URL("/img/logo.png", canonicalURL)} />
+<meta property="og:description" content={description} />
+<meta property="og:updated_time" content="1670336447746" />
+<meta property="og:rich_attachment" content="true" />
+
+<meta property="al:web:should_fallback" content="true" />
+<meta property="al:iphone:app_name" content="Rakesh Gupta" />

@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  desc: string;
+  index: number;
+}
+const { title, desc, index } = Astro.props;
+---
+
+<article
+  class="flex-1 pb-6 md:pb-10 xl:pb-16 pt-10 xl:pt-16 2xl:pt-20 md:px-4 xl:px-6 2xl:px-10"
+>
+  <span
+    class="font-satoshi-semibold mb-12 h-10 w-10 rounded-full border-1 border-dark grid place-content-center"
+  >
+    {index + 1}
+  </span>
+
+  <dt>
+    <h4 class="text-dark font-satoshi-semibold">{title}</h4>
+  </dt>
+  <dt
+    class="pt-1 md:pt-2 md:pr-3 font-satoshi-semibold text-lg text-dark text-opacity-60"
+  >
+    {desc}
+  </dt>
+</article>

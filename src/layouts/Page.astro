@@ -1,0 +1,22 @@
+---
+import Header from "@organisms/Header.astro";
+import Footer from "@organisms/Footer.astro";
+import BaseHead from "src/components/BaseHead.astro";
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body
+    class="bg-center bg-no-repeat bg-cover selection:bg-dark selection:text-white"
+  >
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

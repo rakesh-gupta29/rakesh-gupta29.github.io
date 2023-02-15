@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Set up a webpack config from scratch",
+      "cover": "/img/blogs/webpack.webp",
+      "id": "1",
+      "slug": "https://rakeshgupta.hashnode.dev/set-up-a-webpack-config-from-scratch",
+      "author": { "name": "rakesh gupta" },
+      "createdAt": "12-12-2022",
+      "desc": "set up a config from scratch with all basic features."
+    },
+    {
+      "title": "SEO for developers",
+      "cover": "/img/blogs/seo.webp",
+      "id": "1",
+      "slug": "https://rakeshgupta.hashnode.dev/seo-for-developers",
+      "author": { "name": "rakesh gupta" },
+      "createdAt": "12-12-2022",
+      "desc": "Write client side to expose website correctly to both bots and users to achieve dream top ranking on SERP."
+    }
+  ]
+  

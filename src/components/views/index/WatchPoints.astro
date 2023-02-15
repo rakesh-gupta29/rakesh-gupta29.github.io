@@ -1,0 +1,31 @@
+---
+import watchpoints from "@static/watchpoints.json";
+import WatchPointCard from "@molecules/WatchPointCard.astro";
+interface WatchPoint {
+  title: string;
+  desc: string;
+}
+---
+
+<section class="body-container blade-x-padding blade-top-padding border-b-1">
+  <div
+    class="text-center grid place-content-center place-items-center gap-1 md:gap-2 px-3 blade-top-padding blade-bottom-padding-lg"
+  >
+    <h2 class="font-satoshi-bold text-dark max-w-2xl">
+      Develop, Debug, Deploy
+    </h2>
+    <h5 class="font-satoshi text-dark text-opacity-60">
+      Process that I follow (ideally) while working on a project
+    </h5>
+  </div>
+  <div
+    class="flex lg:flex-row flex-col border-t-1 border-solid border-gray md:gap-x-6 xl:ap-x-10 lg:divide-x-1 divide-solid divide-gray"
+  >
+    {
+      watchpoints.map((elem: WatchPoint, index: number) => {
+        const { title, desc } = elem;
+        return <WatchPointCard title={title} desc={desc} index={index} />;
+      })
+    }
+  </div>
+</section>

@@ -1,0 +1,180 @@
+---
+import IconAnchor from "@atoms/anchors/IconAnchor.astro";
+import TextAnchor from "@atoms/anchors/TextAnchor.astro";
+import MobileNavModal from "@molecules/MobileNavModal.astro";
+---
+
+<header class="body-container border-b-1">
+  <nav
+    class="flex flex-nowrap items-center gap-12 border-solid blade-x-padding py-1"
+  >
+    <IconAnchor
+      target="_self"
+      href="/"
+      ariaLabel="Visit Homepage of Rakesh Gupta's Portfolio"
+    >
+      <img
+        src="/img/logo.png"
+        alt="Rakesh Gupta's website logo"
+        loading="eager"
+        height="48"
+        width="48"
+        class="h-12 md:h-15"
+      />
+    </IconAnchor>
+    <ul
+      role="tree"
+      class="lg:flex hidden flex-nowrap items-center justify-end gap-6"
+    >
+      <li role="treeitem">
+        <TextAnchor size="lg" text="About" href="#about" />
+      </li>
+      <li role="treeitem">
+        <TextAnchor size="lg" text="Projects" href="#projects" />
+      </li>
+      <li role="treeitem">
+        <TextAnchor size="lg" text="Blogs" href="#blogs" />
+      </li>
+      <li role="treeitem">
+        <TextAnchor size="lg" text="Contact" href="#contact" />
+      </li>
+    </ul>
+    <ul class="lg:flex hidden flex-nowrap items-center gap-4 ml-auto">
+      <li>
+        <IconAnchor
+          ariaLabel="visit the Github profile"
+          href="https://www.github.com/rakesh-gupta29"
+          target="_blank"
+        >
+          <svg
+            fill="none"
+            height="24"
+            shape-rendering="geometricPrecision"
+            stroke="inherit"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+            ></path>
+          </svg>
+        </IconAnchor>
+      </li>
+      <li>
+        <IconAnchor
+          ariaLabel="visit Codesandbox profile"
+          href="https://codesandbox.io/u/rakesh.rkgupta29"
+          target="_blank"
+        >
+          <svg
+            fill="none"
+            height="24"
+            shape-rendering="geometricPrecision"
+            stroke="inherit"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"
+            ></path>
+            <path d="M7.5 4.21l4.5 2.6 4.5-2.6"></path>
+            <path d="M7.5 19.79V14.6L3 12"></path>
+            <path d="M21 12l-4.5 2.6v5.19"></path>
+            <path d="M3.27 6.96L12 12.01l8.73-5.05"></path>
+            <path d="M12 22.08V12"></path>
+          </svg>
+        </IconAnchor>
+      </li>
+      <li>
+        <IconAnchor
+          target="_blank"
+          ariaLabel="visit the LinkedIn profile"
+          href="https://www.linkedin.com/in/rakesh-gupta123/"
+        >
+          <svg
+            data-testid="geist-icon"
+            fill="none"
+            height="24"
+            shape-rendering="geometricPrecision"
+            stroke="inherit"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"
+            ></path>
+            <path d="M2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </IconAnchor>
+      </li>
+      <li>
+        <IconAnchor
+          target="_blank"
+          ariaLabel="visit the Leetcode profile"
+          href="https://leetcode.com/rakesh-gupta29/"
+        >
+          <svg
+            fill="none"
+            height="24"
+            shape-rendering="geometricPrecision"
+            stroke="inherit"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M7.05725 21.5434C7.98308 22.4958 9.25725 23 10.7432 23C12.1869 23 13.4968 22.4702 14.4337 21.504L16.6016 19.2408C17.2854 18.5377 17.2717 17.3753 16.5704 16.6512C16.2175 16.2873 15.75 16.0865 15.2559 16.0865H15.2541C14.7765 16.0874 14.3319 16.2762 14.0102 16.609L11.7542 18.8585C11.5251 19.0968 11.1804 19.2178 10.7312 19.2178C10.283 19.2178 9.93833 19.0968 9.70825 18.8585L6.09933 15.1084C5.85 14.8508 5.70792 14.4411 5.70792 13.9846C5.70792 13.5363 5.84358 13.1596 6.10208 12.8928L9.66425 9.16292C9.99517 8.86317 10.3444 8.71742 10.7312 8.71742C11.1043 8.71742 11.2098 8.75133 11.8221 9.20692L14.001 10.9266C14.331 11.2694 14.7765 11.4592 15.2541 11.4592H15.2559C15.7509 11.4592 16.2175 11.2593 16.5713 10.8954C17.2717 10.1722 17.2863 9.00892 16.5493 8.25358L14.3851 6.45417C13.9029 6.04167 13.5033 5.74833 13.1256 5.54025L14.4483 4.15517C15.134 3.45208 15.1212 2.28883 14.419 1.56283C14.0661 1.19983 13.5986 1 13.1036 1C12.626 1 12.1787 1.18883 11.8468 1.53167L3.43733 10.2125C2.51058 11.1704 2 12.5106 2 13.9864C2 15.4861 2.51058 16.8382 3.43733 17.7943L7.05725 21.5434Z"
+            ></path>
+            <rect
+              x="12.3529"
+              y="13.3529"
+              width="10"
+              height="1"
+              rx="0.647059"
+              stroke-width="0.705882"></rect>
+          </svg>
+        </IconAnchor>
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      class="mobile-nav-open ml-auto p-3 text-lg flex flex-nowrap items-center gap-2 lg:hidden font-satoshi"
+    >
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3 9H21"
+          stroke="black"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+        <path
+          d="M3 15H21"
+          stroke="black"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+      Menu
+    </button>
+  </nav>
+</header>
+<MobileNavModal />

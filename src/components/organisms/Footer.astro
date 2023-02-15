@@ -1,0 +1,29 @@
+---
+import TextAnchor from "@atoms/anchors/TextAnchor.astro";
+---
+
+<footer
+  class="body-container blade-x-padding flex justify-between gap-y-4 gap-x-10 md:flex-row flex-col-reverse border-t-1 py-6"
+>
+  <h6 class="font-satoshi">
+    Created By <a
+      href="https://www.github.com/rakesh-gupta29"
+      class="font-satoshi-bold underline underline-offset-4 hover:text-blue focus:text-blue focus:outline-none"
+      >Rakesh Gupta</a
+    >
+  </h6>
+  <ul role="tree" class="flex flex-nowrap gap-4">
+    <li role="treeitem">
+      <TextAnchor size="base" text="About" href="#about" />
+    </li>
+    <li role="treeitem">
+      <TextAnchor size="base" text="Projects" href="#projects" />
+    </li>
+    <li role="treeitem">
+      <TextAnchor size="base" text="Blogs" href="#blogs" />
+    </li>
+    <li role="treeitem">
+      <TextAnchor size="base" text="Contact" href="#contact" />
+    </li>
+  </ul>
+</footer>

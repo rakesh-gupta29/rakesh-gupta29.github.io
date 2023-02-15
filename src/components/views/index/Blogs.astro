@@ -1,0 +1,53 @@
+---
+import BlogCard from "@molecules/BlogCard.astro";
+import blogs from "@static/blogs.json";
+---
+
+<section
+  id="blogs"
+  class="body-container blade-x-padding blade-top-padding blade-bottom-padding border-t-1"
+>
+  <div class="text-center pb-2">
+    <h2 class="font-satoshi-bold text-dark px-5 pb-2">
+      Collaboration, Community
+    </h2>
+    <h5 class="text-dark text-opacity-80 font-satoshi px-5">
+      Documenting my journey through writings.
+    </h5>
+  </div>
+
+  <div class="xl:w-10/12 md:w-11/12 mx-auto blade-top-padding card-stack">
+    {
+      blogs.map((elem) => {
+        return <BlogCard data={elem} />;
+      })
+    }
+  </div>
+  <section
+    class="flex flex-nowrap items-center justify-end gap-6 lg:gap-7 md:gap-5 md:pt-8 pt-6 w-11/12 max-w-screen-xl xl:pt-10 blade-bottom-padding"
+  >
+    <span
+      class="text-dark text-opacity-80 flex-0 font-satoshi-semibold text-xl text-right"
+      >Go through all blogs<br class="hidden md:block" />by me</span
+    ><a
+      class="hover:stroke-blue stroke-dark"
+      href="https://rakeshgupta.hashnode.dev/"
+      target="_blank"
+      rel="noreferrer"
+      ><div
+        class="flex-0 bg-gradient-to-br from-gray h-16 rounded-full to-transparent w-16"
+      >
+        <svg
+          viewBox="0 0 63 63"
+          stroke="black"
+          class="h-16 w-16"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            d="M45.79,32.24l0,.12s0,.1,0,.14a.91.91,0,0,1-.07.14.53.53,0,0,1-.06.1,1.2,1.2,0,0,1-.17.21l-9.59,9.6a1.4,1.4,0,0,1-2,0,1.38,1.38,0,0,1,0-2l7.21-7.22H20a1.39,1.39,0,1,1,0-2.78H41.06l-7.21-7.22a1.38,1.38,0,0,1,0-2,1.4,1.4,0,0,1,2,0L45.41,31a1.84,1.84,0,0,1,.17.22.53.53,0,0,1,.06.1.91.91,0,0,1,.07.14s0,.09,0,.14,0,.07,0,.12a1.23,1.23,0,0,1,0,.54Z"
+            fill="currentColor"
+            class="arrow"></path></svg
+        >
+      </div></a
+    >
+  </section>
+</section>

@@ -1,0 +1,45 @@
+[
+  {
+    "title": "Verdemobility",
+    "subTitle": "VerdeMobility operates to provide the next generation of innovative EV charging solutions with the future laid out for Electric Vehicles. A vision to power the future of human mobility with a full-fledged range of custom hardware and software EV charging infrastructure",
+    "coverImage": "/img/projects/verde.webp",
+    "demoLink": "https://verdemobility.com",
+    "tags": ["react", "nextJS", "GSAP"]
+  },
+  {
+    "title": "EVRE",
+    "subTitle": "Reimagining EV charging stations and solutions through our patented technology and Design. Actively building the largest and most logical network of chargers.",
+    "coverImage": "/img/projects/evre.webp",
+    "demoLink": "https://evre.in",
+    "tags": ["react", "nextJS", "GSAP"]
+  },
+  {
+    "title": "Varaha",
+    "subTitle": "Varaha is a tech startup at the intersection of – climate, nature and technology. The startup uses technologies such as Remote sensing, Blockchain, Science-based quantification tools and models. ",
+    "coverImage": "/img/projects/varaha.webp",
+    "demoLink": "https://www.varaha.earth/",
+    "tags": ["react", "nextJS", "GSAP"]
+  },
+  {
+    "title": "DN99",
+    "subTitle": "DN99 is a non-profit organization founded by alumni of the Dadabhai Naoroji High School batch of 1999 in Anand, Gujarat. With more than 50 members DN99 has helped many lives and adopted 5 government schools, and it continues to grow with India.",
+    "coverImage": "/img/projects/dn99.webp",
+    "demoLink": "https://dn99.org",
+    "tags": ["react", "nextJS", "GSAP"]
+  },
+  {
+    "title": "Talati Easy Foods",
+    "subTitle": "Talati easy foods in Indore manufactures quality food and beverages. This project was to create a digital identitfy for them and to showcase their projects.",
+    "coverImage": "/img/projects/talati.webp",
+    "demoLink": "https://talatieasyfoods.com",
+    "tags": ["react", "nextJS", "GSAP"]
+  },
+  
+  {
+    "title": "Gavyam Gentech",
+    "subTitle": "Gavyam is working to make farmer's lives better through digitalization in reproduction sector and thereby helping in better cattle management system to Milk Unions as well along with farmers.",
+    "coverImage": "/img/projects/gavyam.webp",
+    "demoLink": "https://www.gavyamgentec.com/",
+    "tags": ["react", "nextJS", "GSAP"]
+  }
+]

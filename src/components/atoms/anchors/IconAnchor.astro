@@ -1,0 +1,22 @@
+---
+interface Props {
+  href: string;
+  ariaLabel: string;
+  target: "_blank" | "_self";
+  isLight?: boolean;
+}
+const { ariaLabel, href, target, isLight } = Astro.props;
+---
+
+<a
+  href={href}
+  target={target}
+  aria-label={ariaLabel}
+  class={` grid place-content-center p-2 ronded-full outline-none focus:outline-none ${
+    isLight
+      ? "stroke-white  focus:stroke-blue hover:stroke-blue"
+      : "stroke-dark hover:stroke-blue focus:stroke-blue "
+  }`}
+>
+  <slot />
+</a>
