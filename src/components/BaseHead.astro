@@ -1,3 +1,4 @@
+
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
@@ -9,7 +10,7 @@ export interface Props {
   image?: string;
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const canonicalURL = "https://rakesh-gupta29.github.io";
 
 const { title, description, image = "/img/logo.png" } = Astro.props;
 ---
@@ -21,30 +22,31 @@ const { title, description, image = "/img/logo.png" } = Astro.props;
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="title" content={title} />
-<meta name="icon" content={new URL("/img/logo.png", canonicalURL)} />
+<meta name="icon" content="https://rakesh-gupta29.github.io/img/logo.png" />
 <meta name="description" content={description} />
 <meta name="theme-color" content="#000000" />
 <meta name="color-scheme" content="light" />
 <meta
   name="keywords"
-  content="personal portfolio,rakesh gupta,portolio,website, frontend developer, indore"
+  content="personal portfolio,rakesh gupta,portolio,website, frontend developer, developer, rakesh"
 />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@guptaji_123" />
-<meta name="twitter:creator" content="@guptaji_123" />
+<meta name="twitter:site" content="@rakesh_gupta29" />
+<meta name="twitter:creator" content="@rakesh_gupta29" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={new URL("/img/logo.png", canonicalURL)} />
+<meta name="twitter:image" content="https://rakesh-gupta29.github.io/img/logo.png" />
 
 <meta property="og:title" content={title} />
-<meta property="og:type" content="Perosonal Website" />
+<meta property="og:type" content="Personal Website" />
 <meta property="og:url" content="https://rakesh-gupta29.github.io/" />
 <meta property="og:site_name" content="Rakesh Gupta" />
-<meta property="og:image" content={new URL("/img/logo.png", canonicalURL)} />
+<meta property="og:image" content="https://rakesh-gupta29.github.io/img/logo.png" />
 <meta property="og:description" content={description} />
 <meta property="og:updated_time" content="1670336447746" />
 <meta property="og:rich_attachment" content="true" />
 
 <meta property="al:web:should_fallback" content="true" />
 <meta property="al:iphone:app_name" content="Rakesh Gupta" />
+
