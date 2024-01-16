@@ -1,0 +1,75 @@
+---
+
+---
+
+<section class="min-h-[450px] md:h-[650px] blade-top-padding-lg">
+  <div
+    class="relative flex justify-center items-center flex-col text-center w-container blade-top-padding-lg gap-4 md:gap-6 lg:gap-5 min-h-[450px]"
+  >
+    <h2
+      class="home-banner-title home-title text-shadow-title bg-title-gradient opacity-0 scale-[0.98] origin-bottom bg-clip-text text-transparent text-center font-medium leading-tight"
+    >
+      Creating experiences with Design & <br class="md:block hidden" /> Development,
+      Creativity & Pragmatism.
+    </h2>
+    <h6
+      class="text-white w-11/12 text-opacity-80 home-banner-subtitle opacity-0 scale-[0.98] origin-bottom font-light checking mx-auto text-center leading-relaxed"
+    >
+      Hello! I am Rakesh Gupta, a passionate frontend developer <br
+        class="md:block hidden"
+      /> with over two years of industry experience.
+    </h6>
+  </div>
+</section>
+
+<style>
+  @keyframes slideandappear {
+    from {
+      opacity: 0;
+      scale: 0.98;
+      transform: translateY(-16px);
+    }
+    to {
+      scale: 1;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.98;
+    }
+    to {
+      scale: 1;
+      opacity: 1;
+    }
+  }
+
+  .home-banner-title,
+  .home-banner-subtitle,
+  .home-banner-cta {
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-name: appear;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .home-banner-chip {
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-name: appear;
+  }
+  .home-banner-title {
+    animation-delay: 0s;
+  }
+  .home-banner-subtitle {
+    animation-delay: 200ms;
+  }
+  .home-banner-cta {
+    animation-delay: 400ms;
+  }
+  .home-banner-chip {
+    animation-delay: 0ms;
+  }
+</style>

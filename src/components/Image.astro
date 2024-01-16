@@ -1,0 +1,18 @@
+---
+interface Props {
+  alt: string;
+  loader: string;
+  src: string;
+  classes?: string;
+}
+const { alt, src, classes = "", loader } = Astro.props;
+---
+
+<div class=`${classes} bg-[url('${loader}')] bg-center bg-cover bg-no-repeat  `>
+  <img
+    src={src}
+    alt={alt}
+    class="h-full w-full object-center object-cover"
+    loading="eager"
+  />
+</div>

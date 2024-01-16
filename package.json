@@ -1,0 +1,20 @@
+{
+  "name": "rakesh",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --host --port=4100",
+    "start": "astro dev",
+    "build": "astro rakesh && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "astro": "^4.0.8",
+    "gsap": "^3.12.4",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3"
+  }
+}

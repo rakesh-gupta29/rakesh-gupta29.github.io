@@ -1,0 +1,66 @@
+[
+  {
+    "title": "HTML",
+    "src": "/skills/html.svg"
+  },
+  {
+    "title": "CSS",
+    "src": "/skills/css.svg"
+  },
+
+  {
+    "title": "JavaScript",
+    "src": "/skills/js.svg"
+  },
+  {
+    "title": "TypeScript",
+    "src": "/skills/ts.svg"
+  },
+
+  {
+    "title": "React",
+    "src": "/skills/react.svg"
+  },
+  {
+    "title": "Next",
+    "src": "/skills/nextjs.svg"
+  },
+  {
+    "title": "Node",
+    "src": "/skills/nodejs.svg"
+  },
+
+  {
+    "title": "MongoDB",
+    "src": "/skills/mongo.svg"
+  },
+  {
+    "title": "Laravel",
+    "src": "/skills/laravel.svg"
+  },
+  {
+    "title": "Golang",
+    "src": "/skills/golang.svg"
+  },
+
+  {
+    "title": "Git",
+    "src": "/skills/git.svg"
+  },
+  {
+    "title": "GitHub",
+    "src": "/skills/github.svg"
+  },
+  {
+    "title": "Figma",
+    "src": "/skills/figma.svg"
+  },
+  {
+    "title": "DigitalOcean",
+    "src": "/skills/digitalocean.svg"
+  },
+  {
+    "title": "Firebase",
+    "src": "/skills/firebase.svg"
+  }
+]
