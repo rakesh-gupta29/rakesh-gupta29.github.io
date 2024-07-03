@@ -17,6 +17,10 @@
     "src": "/skills/ts.svg"
   },
 
+    {
+    "title": "Tailwind",
+    "src": "/skills/tailwind.svg"
+  },
   {
     "title": "React",
     "src": "/skills/react.svg"
