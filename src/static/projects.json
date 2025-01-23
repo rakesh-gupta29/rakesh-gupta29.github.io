@@ -105,5 +105,29 @@
     "isStatic": true,
     "poster": "/projects/efp.webp",
     "url": "https://efpolymer.in/"
+  },
+  {
+    "title": "ProsParity",
+    "tech": ["React", "GSAP", "TailwindCSS"],
+    "desc": "ProsParity is aiming to build India's largest platform to enable financing for electric mobility. I was part of a two-person team that created the initial brand design and web presence, tweaking and aligning the website with their updated brand identity and positioning.",
+    "isStatic": true,
+    "poster": "/projects/prosparity.jpeg",
+    "url": "https://prosparity.in/"
+  },
+  {
+    "title": "BharatRohan",
+    "tech": ["React", "GSAP", "TailwindCSS"],
+    "desc": "BharatRohan aims to empower the Indian agriculture industry with an extraordinary in-depth understanding of lands and crops by using unique technical solutions, including drones and UAVs. We created their brand design along with their website and other digital deliverables.",
+    "isStatic": true,
+    "poster": "/projects/bharatrohan.jpeg",
+    "url": "https://bharatrohan.in/"
+  },
+  {
+    "title": "CPO Assist",
+    "tech": ["React", "GSAP", "TailwindCSS"],
+    "desc": "CPO Assist is a platform enabling Charge Point Operators across the globe to seamlessly manage their site operations. It was one of our many EV platform projects showcasing our expertise and experience in creating for clients in the EV domain.",
+    "isStatic": true,
+    "poster": "/projects/cpo_assist.jpeg",
+    "url": "https://cpoassist.com/"
   }
 ]
