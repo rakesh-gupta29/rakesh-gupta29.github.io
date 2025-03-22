@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-<h1 align="center">Portfolio website</h1>
+<h1 align="center">Portfolio</h1>
 <details>
   <summary>Table of Contents</summary>
   <ol>
