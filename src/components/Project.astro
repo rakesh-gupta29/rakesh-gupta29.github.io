@@ -15,104 +15,99 @@ const {
 ---
 
 <article
-  class="project-card rounded-lg overflow-hidden lg:rounded-xl pb-7 md:pb-10 max-w-md lg:max-w-none mx-auto"
+  class="rounded-lg border border-neutral-800 overflow-hidden lg:rounded-xl lg:grid grid-cols-7 gap-9 p-1"
 >
-  {
-    isStatic ? (
-      <div class="h-64 md:h-[280px] lg:h-[300px] xl:h-[320px] overflow-hidden w-full">
-        <img
-          class="w-full h-full  object-cover object-center"
-          src={poster}
-          alt={`Thubnail for ${title}  project created by Rakesh Gupta`}
-        />
-      </div>
-    ) : (
-      <div class="relative h-60 bg-gradient-to-b from-gray-800 to-gray-954 md:h-[280px] lg:h-[300px] xl:h-[320px] overflow-hidden rounded-md lg:rounded-lg w-full">
-        <video
-          autoplay
-          loop
-          muted
-          class="absolute inset-0 object-cover h-full w-full object-bottom"
-        >
-          <source src={coverVideo} type="video/mp4" />
-        </video>
+  <div class="col-span-3 h-72 lg:h-80 select-none">
+    {
+      isStatic ? (
+        <div class="overflow-hidden  rounded-lg h-full w-full">
+          <img
+            class="w-full h-full  object-cover object-center"
+            src={poster}
+            alt={`Thubnail for ${title}  project created by Rakesh Gupta`}
+          />
+        </div>
+      ) : (
+        <div class="relative bg-gradient-to-b h-full from-gray-800 to-gray-954  overflow-hidden rounded-md lg:rounded-lg w-full">
+          <video
+            autoplay
+            loop
+            muted
+            class="absolute inset-0 object-cover h-full w-full object-bottom"
+          >
+            <source src={coverVideo} type="video/mp4" />
+          </video>
 
-        {logo ? (
-          <div class="absolute inset-0 p-7">
-            <img
-              class="ml-auto w-auto h-5 md:h-6"
-              src={logo}
-              alt={`overlay picture for ${title} created by Rakesh Gupta`}
-            />
-          </div>
-        ) : overlay ? (
-          <div class="absolute inset-0 grid place-content-center place-items-center p-3">
-            <img
-              class="h-[70%]  w-full mx-auto object-contain object-center"
-              src={overlay}
-              alt={` overlay picture for ${title} created by Rakesh Gupta`}
-            />
-          </div>
-        ) : (
-          ""
-        )}
-      </div>
-    )
-  }
+          {logo ? (
+            <div class="absolute inset-0 p-7">
+              <img
+                class="ml-auto w-auto h-5 md:h-6"
+                src={logo}
+                alt={`overlay picture for ${title} created by Rakesh Gupta`}
+              />
+            </div>
+          ) : overlay ? (
+            <div class="absolute inset-0 grid place-content-center place-items-center p-3">
+              <img
+                class="h-[70%]  w-full mx-auto object-contain object-center"
+                src={overlay}
+                alt={` overlay picture for ${title} created by Rakesh Gupta`}
+              />
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
+      )
+    }
+  </div>
   <div
-    class="flex flex-col items-start gap-2 pl-4 md:pl-5 xl:pl-6 pr-3 md:w-11/12 xl:w-11/12 prounded-lg oveflow-hidden lg:rounded-xl pt-6 lg:pt-7"
+    class="flex pb-6 px-5 md:px-0 col-span-4 flex-col items-start gap-2 oveflow-hidden w-11/12 pt-6 lg:pt-7"
   >
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener"
-      class="focus-visible:outline-none outline-none flex items-center gap-3 group"
-    >
-      <h4
-        class="md:block hidden font-medium  text-transparent bg-clip-text text-white group-focus-visible:text-transparent group-hover:text-transparent transition-all duration-200 ease-default bg-hover-gradient"
-      >
+    <div class="flex-1">
+      <h4 class="md:block hidden font-medium text-white">
         {title}
       </h4>
-
-      <h3
-        class="md:hidden block font-medium text-transparent bg-clip-text text-white group-focus-visible:text-transparent group-hover:text-transparent transition-all duration-200 ease-default bg-hover-gradient"
-      >
+      <h3 class="md:hidden block font-medium text-white">
         {title}
       </h3>
-
-      <svg
-        width="12"
-        height="12"
-        class="fill-white group-hover:fill-pink2 mb-px transition-all duration-300 ease-default group-hover:rotate-45 group-focus-visible:rotate-45 rotate-0"
-        viewBox="0 0 19 19"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+      <div class="flex gap-3">
+        {
+          tech.map((elem: string) => {
+            return (
+              <span class="text-white text-opacity-60 font-regular  md:pt-1  pb-1 md:pb-2">
+                #{elem}
+              </span>
+            );
+          })
+        }
+      </div>
+      <span
+        class="text-sm md:text-base text-white text-opacity-80 font-light pr-4 leading-tight"
       >
-        <g id="Frame 1686560953">
-          <path
-            id="Arrow 2"
-            d="M18.9219 1.75C18.9219 0.800756 18.1524 0.0312437 17.2031 0.0312434L1.73433 0.0312439C0.785093 0.0312439 0.0155807 0.800756 0.0155801 1.75C0.0155807 2.69924 0.785093 3.46875 1.73433 3.46875L15.4844 3.46875L15.4844 17.2188C15.4844 18.168 16.2539 18.9375 17.2031 18.9375C18.1524 18.9375 18.9219 18.168 18.9219 17.2188L18.9219 1.75ZM2.91847 18.4653L18.4185 2.96534L15.9878 0.534655L0.487782 16.0347L2.91847 18.4653Z"
-            fill="inherit"></path>
-        </g>
+        {desc}
+      </span>
+    </div>
+    <a
+      target="_blank"
+      href={url}
+      class="pt-3 font-semibold border-b border-white leading-tight focus-visible:outline-none flex items-center gap-2 font-regular text-white hover:text-pink2 hover:border-pink2 cursor-pointer focus-visible:text-pink2 focus-visible:border-pink2 transition"
+    >
+      Visit Now
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-3"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
       </svg>
     </a>
-
-    <div class="flex gap-3">
-      {
-        tech.map((elem) => {
-          return (
-            <span class="text-white text-opacity-60 font-regular  md:pt-1  pb-1 md:pb-2">
-              #{elem}
-            </span>
-          );
-        })
-      }
-    </div>
-    <span
-      class="text-sm md:text-base text-white text-opacity-80 font-light pr-4"
-    >
-      {desc}
-    </span>
   </div>
 </article>
 
