@@ -31,11 +31,7 @@ import "../index.css";
     />
 
     <meta name="author" content="Rakesh Gupta (rakesh.rkgupta29@gmail.com)" />
-
-    <meta
-      itemprop="image"
-      content="https://rakesh-gupta29.github.io/preview.png"
-    />
+    <meta content="https://rakesh-gupta29.github.io/preview.png" />
     <meta itemprop="name" content="Rakesh Gupta | Portfolio" />
 
     <title>{title}</title>
@@ -96,7 +92,7 @@ import "../index.css";
       gtag("config", "G-4QK4W491DC");
     </script>
   </head>
-  <body>
+  <body class="max-w-screen-xl mx-auto border-l border-r border-neutral-800">
     <div class="fixed pointer-events-none z-0 inset-0" aria-hidden="true">
       <canvas id="body-canvas"></canvas>
     </div>
@@ -148,7 +144,7 @@ import "../index.css";
 
       constructor(
         el: HTMLCanvasElement,
-        { quantity = 150, staticity = 100, ease = 10 } = {}
+        { quantity = 150, staticity = 100, ease = 10 } = {},
       ) {
         this.canvas = el;
         if (!this.canvas) return;
@@ -262,7 +258,7 @@ import "../index.css";
         start1: number,
         end1: number,
         start2: number,
-        end2: number
+        end2: number,
       ): number {
         const remapped =
           ((value - start1) * (end2 - start2)) / (end1 - start1) + start2;
@@ -285,7 +281,7 @@ import "../index.css";
             0,
             20,
             0,
-            1
+            1,
           ).toFixed(2);
           if (remapClosestEdge > 1) {
             circle.alpha += 0.02;
@@ -325,7 +321,7 @@ import "../index.css";
                 translateY: circle.translateY,
                 alpha: circle.alpha,
               },
-              true
+              true,
             );
           }
         });

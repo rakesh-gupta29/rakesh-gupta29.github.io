@@ -3,7 +3,7 @@ import projects from "../../static/projects.json";
 import Project from "../../components/Project.astro";
 ---
 
-<section id="work" class="blade-top-padding-lg blade-bottom-padding-lg">
+<section id="work" class="pt-4 blade-bottom-padding-lg">
   <div
     class="contribution-graph max-w-[100vw] oveflow-hidden relative min-h-[250px] projects-title-wrapper"
   >
@@ -481,19 +481,19 @@ import Project from "../../components/Project.astro";
       </svg>
     </div>
     <div
-      class="relative -mt-[4.5rem] lg:mt-0 lg:absolute left-0 right-0 bottom-0 top-0 md:top-auto max-w-xl mx-auto grid place-content-center text-center px-5"
+      class="relative -mt-[5rem] -translate-y-5 lg:absolute left-0 right-0 bottom-0 top-0 md:top-auto max-w-xl mx-auto grid place-content-center text-center px-5"
     >
-      <h1
+      <h2
         class="text-shadow-title bg-title-gradient md:block hidden bg-clip-text text-transparent font-medium relative"
       >
         Develop, Debug, <br /> Deploy, Repeat.
-      </h1>
+      </h2>
 
-      <h2
+      <h3
         class="text-shadow-title bg-title-gradient md:hidden block bg-clip-text text-transparent font-medium relative"
       >
         Develop, Debug, <br /> Deploy, Repeat.
-      </h2>
+      </h3>
     </div>
   </div>
 
@@ -527,6 +527,6 @@ import Project from "../../components/Project.astro";
         trigger: ".contribution-graph",
         toggleActions: "play reverse play reverse",
       },
-    }
+    },
   );
 </script>
