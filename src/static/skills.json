@@ -61,5 +61,9 @@
   {
     "title": "Firebase",
     "src": "/skills/firebase.svg"
+  },
+  {
+    "title": "Elixir",
+    "src": "/skills/elixir.svg"
   }
 ]
