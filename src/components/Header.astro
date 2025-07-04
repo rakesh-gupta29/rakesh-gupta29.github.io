@@ -2,404 +2,477 @@
 
 ---
 
-<header class="px-3">
+<header class="">
   <nav
-    class="backdrop-blur-3xl z-[9999] fixed top-0 px-6 h-20 mx-auto left-0 max-w-screen-xl p-2 right-0 lg:w-full flex justify-between gap-3"
+    class="backdrop-blur-3xl z-[9999] fixed top-0 mx-auto left-0 max-w-screen-xl right-0 lg:w-full"
   >
-    <div class="flex items-center gap-3">
-      <div class="h-10 grid md:h-12 w-10 md:w-12 rounded-full overflow-hidden">
-        <img
-          class="object-cover object-top w-full h-full"
-          src="/profile.jpeg"
-          alt="profile picture of Rakesh Gupta - frontend developer"
-        />
+    <div class="flex justify-between gap-3 px-3">
+      <div class="flex items-center gap-3 px-2 md:px-6 py-4">
+        <div
+          class="h-10 grid md:h-12 min-w-[40px] w-10 md:w-12 rounded-full overflow-hidden"
+        >
+          <img
+            class="object-cover object-top w-full h-full"
+            src="/profile.jpeg"
+            alt="profile picture of Rakesh Gupta - frontend developer"
+          />
+        </div>
+        <span class="flex gap-3 items-center ">
+        <span class="text-white text-lg mt-1  font-medium leading-tight md:block hidden">Rakesh Gupta</span>
+          <button
+            type="button"
+            onclick="document.querySelector('.open-to-work-wrapper').classList.toggle('open')"
+            class=" ml-3 md:inline-flex hidden leading-none items-center gap-x-1.5 py-1.5 px-3 rounded-full text-[14px] font-regular bg-blue-100 text-white dark:bg-white/10 dark:text-white border border-white/20"
+          >
+            <span
+              class="size-1.5 inline-block -translate-y-[1px] rounded-full bg-white-800 dark:bg-[#3BA55D]"
+            ></span>
+            Open to work
+          </button>
+        </span>
       </div>
-      <span class="text-white text-base font-medium leading-tight"
-        >Rakesh Gupta</span
+
+      <ul class="items-center gap-3 md:flex hidden">
+        <li>
+          <a
+            href="#work"
+            class="text-white text-sm font-regular focus-visible:text-pink2 hover:text-pink2 transition-colors duration-200 ease-default outline-none focus-visible:outline-none px-2"
+            >Work</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="#contact"
+            class="text-white text-sm font-regular focus-visible:text-pink2 hover:text-pink2 transition-colors duration-200 ease-default outline-none focus-visible:outline-none px-2"
+            >Contact</a
+          >
+        </li>
+
+        <li class="">
+          <a
+            href="https://drive.google.com/file/d/1V0OdMaLp52ZQg6_hpxi8Fybc5GeR-z1J/view?usp=drive_link"
+            target="_blank"
+            class="text-white text-sm font-regular focus-visible:text-pink2 hover:text-pink2 transition-colors duration-200 ease-default outline-none focus-visible:outline-none px-2"
+            >Resume
+          </a>
+        </li>
+      </ul>
+      <ul
+        class="list-none flex items-center gap-2 md:gap-3 xl:gap-4 md:pr-2 pl-2"
       >
+        <li class="pl-3">
+          <a
+            rel="noopener"
+            target="_blank"
+            href="https://www.linkedin.com/in/rakesh-gupta29/"
+            class="hover:border-opacity-70 transition-all duration-200 ease-default focus-visible:border-opacity-70 focus-visible:outline-none outline-none border-1 border-white border-opacity-0 rounded-full overflow-hidden grid"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g filter="url(#filter0_bii_800_4079)">
+                <circle
+                  cx="20.9375"
+                  cy="20.1602"
+                  r="20"
+                  fill="url(#paint0_linear_800_4079)"
+                  fill-opacity="0.2"></circle>
+              </g>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16.9914 12.8329C16.9914 13.8419 16.1735 14.6599 15.1644 14.6599C14.1554 14.6599 13.3374 13.8419 13.3374 12.8329C13.3374 11.8238 14.1554 11.0059 15.1644 11.0059C16.1735 11.0059 16.9914 11.8238 16.9914 12.8329ZM18.7172 26.1769V16.0427H21.7376V17.4286H21.7802C22.2001 16.633 23.227 15.7923 24.7589 15.7923C27.9497 15.7923 28.5374 17.8902 28.5374 20.6202V26.1777H25.3892V21.2488C25.3892 20.0742 25.3692 18.5623 23.7521 18.5623C22.1125 18.5623 21.8637 19.8429 21.8637 21.1653V26.1769H18.7172ZM16.7411 16.0427H13.5896V26.1769H16.7411V16.0427Z"
+                fill="url(#paint1_linear_800_4079)"></path>
+              <defs>
+                <filter
+                  id="filter0_bii_800_4079"
+                  x="-29.9653"
+                  y="-30.7426"
+                  width="101.806"
+                  height="101.806"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"
+                  ></feFlood>
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="15.4514"
+                  ></feGaussianBlur>
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_800_4079"></feComposite>
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_backgroundBlur_800_4079"
+                    result="shape"></feBlend>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"></feColorMatrix>
+                  <feOffset dy="-5.15046"></feOffset>
+                  <feGaussianBlur stdDeviation="6.18055"></feGaussianBlur>
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"></feComposite>
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.0392157 0 0 0 0 0.4 0 0 0 0 0.760784 0 0 0 0.35 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    mode="normal"
+                    in2="shape"
+                    result="effect2_innerShadow_800_4079"></feBlend>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"></feColorMatrix>
+                  <feOffset dy="2.06018"></feOffset>
+                  <feGaussianBlur stdDeviation="2.06018"></feGaussianBlur>
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"></feComposite>
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    mode="normal"
+                    in2="effect2_innerShadow_800_4079"
+                    result="effect3_innerShadow_800_4079"></feBlend>
+                </filter>
+                <linearGradient
+                  id="paint0_linear_800_4079"
+                  x1="3.33755"
+                  y1="-18.9265"
+                  x2="40.628"
+                  y2="-12.2552"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#AAE0FE" stop-opacity="0"></stop>
+                  <stop offset="0.896888" stop-color="#D0EBFA"></stop>
+                  <stop offset="1" stop-color="#F9E0FF"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_800_4079"
+                  x1="27.4253"
+                  y1="10.0447"
+                  x2="12.1447"
+                  y2="21.6539"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#0A66C2"></stop>
+                  <stop offset="1" stop-color="#0AC2C2"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            rel="noopener"
+            target="_blank"
+            href="https://github.com/rakesh-gupta29"
+            class="hover:border-opacity-70 transition-all duration-200 ease-default focus-visible:border-opacity-70 focus-visible:outline-none outline-none border-1 border-white border-opacity-0 rounded-full overflow-hidden grid"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10"
+              viewBox="0 0 40 41"
+              fill="none"
+            >
+              <g filter="url(#filter0_bii_800_4088)">
+                <circle
+                  cx="20"
+                  cy="20.1602"
+                  r="20"
+                  fill="url(#paint0_linear_800_4088)"
+                  fill-opacity="0.2"></circle>
+              </g>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20.1922 12.5742C15.8948 12.5742 12.4141 16.0549 12.4141 20.3523C12.4141 23.7941 14.6405 26.7012 17.7323 27.7318C18.1212 27.7998 18.2671 27.5665 18.2671 27.3623C18.2671 27.1776 18.2574 26.5651 18.2574 25.9136C16.3031 26.2734 15.7975 25.4372 15.642 24.9997C15.5545 24.7761 15.1753 24.0858 14.8447 23.9011C14.5725 23.7552 14.1836 23.3955 14.835 23.3858C15.4475 23.376 15.885 23.9497 16.0309 24.183C16.7309 25.3595 17.849 25.0289 18.2962 24.8247C18.3643 24.3191 18.5685 23.9788 18.7921 23.7844C17.0615 23.5899 15.2531 22.9191 15.2531 19.944C15.2531 19.0981 15.5545 18.3981 16.0503 17.8536C15.9725 17.6591 15.7003 16.8619 16.1281 15.7924C16.1281 15.7924 16.7795 15.5882 18.2671 16.5897C18.8893 16.4147 19.5505 16.3271 20.2116 16.3271C20.8727 16.3271 21.5339 16.4147 22.1561 16.5897C23.6437 15.5785 24.2951 15.7924 24.2951 15.7924C24.7229 16.8619 24.4507 17.6591 24.3729 17.8536C24.8687 18.3981 25.1701 19.0884 25.1701 19.944C25.1701 22.9288 23.352 23.5899 21.6214 23.7844C21.9033 24.0275 22.1464 24.4941 22.1464 25.2233C22.1464 26.2637 22.1367 27.0998 22.1367 27.3623C22.1367 27.5665 22.2825 27.8096 22.6714 27.7318C24.2155 27.2105 25.5572 26.2181 26.5077 24.8943C27.4583 23.5705 27.9698 21.982 27.9702 20.3523C27.9702 16.0549 24.4895 12.5742 20.1922 12.5742Z"
+                fill="url(#paint1_linear_800_4088)"></path>
+              <defs>
+                <filter
+                  id="filter0_bii_800_4088"
+                  x="-30"
+                  y="-29.8398"
+                  width="100"
+                  height="100"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"
+                  ></feFlood>
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="15"
+                  ></feGaussianBlur>
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_800_4088"></feComposite>
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_backgroundBlur_800_4088"
+                    result="shape"></feBlend>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"></feColorMatrix>
+                  <feOffset dy="2"></feOffset>
+                  <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"></feComposite>
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    mode="normal"
+                    in2="shape"
+                    result="effect2_innerShadow_800_4088"></feBlend>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"></feColorMatrix>
+                  <feOffset dy="-5"></feOffset>
+                  <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"></feComposite>
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.35 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    mode="normal"
+                    in2="effect2_innerShadow_800_4088"
+                    result="effect3_innerShadow_800_4088"></feBlend>
+                </filter>
+                <linearGradient
+                  id="paint0_linear_800_4088"
+                  x1="2.40005"
+                  y1="-18.9265"
+                  x2="39.6905"
+                  y2="-12.2552"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#AAE0FE" stop-opacity="0"></stop>
+                  <stop offset="0.896888" stop-color="#D0EBFA"></stop>
+                  <stop offset="1" stop-color="#F9E0FF"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_800_4088"
+                  x1="26.832"
+                  y1="11.613"
+                  x2="11.4598"
+                  y2="23.5651"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white"></stop>
+                  <stop offset="1" stop-color="#A1A1A1"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            rel="noopener"
+            target="_blank"
+            href="mailto:rakesh.rkgupta29@gmail.com"
+            class="hover:border-opacity-70 transition-all duration-200 ease-default focus-visible:border-opacity-70 focus-visible:outline-none outline-none border-1 border-white border-opacity-0 rounded-full overflow-hidden grid"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g filter="url(#filter0_bii_776_484)">
+                <circle
+                  cx="20.7324"
+                  cy="20.5806"
+                  r="20"
+                  fill="url(#paint0_linear_776_484)"
+                  fill-opacity="0.2"></circle>
+              </g>
+              <path
+                d="M20.7322 20.5808L13.146 16.7432V15.8394C13.146 15.5727 13.2398 15.348 13.4275 15.1652C13.6152 14.9825 13.8374 14.8911 14.0943 14.8911H27.3701C27.627 14.8911 27.8492 14.9825 28.0369 15.1652C28.2246 15.348 28.3184 15.5727 28.3184 15.8394V16.7432L20.7322 20.5808ZM20.2581 21.529H21.2063L28.3184 17.8397V25.3221C28.3184 25.579 28.2246 25.8012 28.0369 25.9889C27.8492 26.1766 27.627 26.2704 27.3701 26.2704H14.0943C13.8374 26.2704 13.6152 26.1766 13.4275 25.9889C13.2398 25.8012 13.146 25.579 13.146 25.3221V17.8397L20.2581 21.529Z"
+                fill="url(#paint1_linear_776_484)"></path>
+              <defs>
+                <filter
+                  id="filter0_bii_776_484"
+                  x="-29.2676"
+                  y="-29.4194"
+                  width="100"
+                  height="100"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"
+                  ></feFlood>
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="15"
+                  ></feGaussianBlur>
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_776_484"></feComposite>
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_backgroundBlur_776_484"
+                    result="shape"></feBlend>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"></feColorMatrix>
+                  <feOffset dy="2"></feOffset>
+                  <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"></feComposite>
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    mode="normal"
+                    in2="shape"
+                    result="effect2_innerShadow_776_484"></feBlend>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"></feColorMatrix>
+                  <feOffset dy="-5"></feOffset>
+                  <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"></feComposite>
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0.729708 0 0 0 0 0.775315 0 0 0 0.35 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    mode="normal"
+                    in2="effect2_innerShadow_776_484"
+                    result="effect3_innerShadow_776_484"></feBlend>
+                </filter>
+                <linearGradient
+                  id="paint0_linear_776_484"
+                  x1="3.13247"
+                  y1="-18.5061"
+                  x2="40.4229"
+                  y2="-11.8348"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#AAE0FE" stop-opacity="0"></stop>
+                  <stop offset="0.896888" stop-color="#D0EBFA"></stop>
+                  <stop offset="1" stop-color="#F9E0FF"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_776_484"
+                  x1="27.2082"
+                  y1="14.1702"
+                  x2="15.3128"
+                  y2="26.1978"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#0057FF"></stop>
+                  <stop offset="1" stop-color="#00F0FF"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
-
-    <ul class="items-center gap-3 md:flex hidden">
-      <li>
-        <a
-          href="#work"
-          class="text-white text-sm font-regular focus-visible:text-pink2 hover:text-pink2 transition-colors duration-200 ease-default outline-none focus-visible:outline-none px-2"
-          >Work</a
-        >
-      </li>
-
-      <li>
-        <a
-          href="#contact"
-          class="text-white text-sm font-regular focus-visible:text-pink2 hover:text-pink2 transition-colors duration-200 ease-default outline-none focus-visible:outline-none px-2"
-          >Contact</a
-        >
-      </li>
-
-      <li class="">
-        <a
-          href="https://drive.google.com/file/d/1V0OdMaLp52ZQg6_hpxi8Fybc5GeR-z1J/view?usp=drive_link"
-          target="_blank"
-          class="text-white text-sm font-regular focus-visible:text-pink2 hover:text-pink2 transition-colors duration-200 ease-default  outline-none focus-visible:outline-none px-2"
-          >Resume
-        </a
-        >
-      </li>
-    </ul>
-    <ul
-      class="list-none flex items-center gap-2 md:gap-3 xl:gap-4 md:pr-2 pl-2"
-    >
-      <li class="pl-3">
-        <a
-          rel="noopener"
-          target="_blank"
-          href="https://www.linkedin.com/in/rakesh-gupta29/"
-          class="hover:border-opacity-70 transition-all duration-200 ease-default focus-visible:border-opacity-70 focus-visible:outline-none outline-none border-1 border-white border-opacity-0 rounded-full overflow-hidden grid"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10"
-            viewBox="0 0 41 41"
-            fill="none"
-          >
-            <g filter="url(#filter0_bii_800_4079)">
-              <circle
-                cx="20.9375"
-                cy="20.1602"
-                r="20"
-                fill="url(#paint0_linear_800_4079)"
-                fill-opacity="0.2"></circle>
-            </g>
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M16.9914 12.8329C16.9914 13.8419 16.1735 14.6599 15.1644 14.6599C14.1554 14.6599 13.3374 13.8419 13.3374 12.8329C13.3374 11.8238 14.1554 11.0059 15.1644 11.0059C16.1735 11.0059 16.9914 11.8238 16.9914 12.8329ZM18.7172 26.1769V16.0427H21.7376V17.4286H21.7802C22.2001 16.633 23.227 15.7923 24.7589 15.7923C27.9497 15.7923 28.5374 17.8902 28.5374 20.6202V26.1777H25.3892V21.2488C25.3892 20.0742 25.3692 18.5623 23.7521 18.5623C22.1125 18.5623 21.8637 19.8429 21.8637 21.1653V26.1769H18.7172ZM16.7411 16.0427H13.5896V26.1769H16.7411V16.0427Z"
-              fill="url(#paint1_linear_800_4079)"></path>
-            <defs>
-              <filter
-                id="filter0_bii_800_4079"
-                x="-29.9653"
-                y="-30.7426"
-                width="101.806"
-                height="101.806"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix"
-                ></feFlood>
-                <feGaussianBlur in="BackgroundImageFix" stdDeviation="15.4514"
-                ></feGaussianBlur>
-                <feComposite
-                  in2="SourceAlpha"
-                  operator="in"
-                  result="effect1_backgroundBlur_800_4079"></feComposite>
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_backgroundBlur_800_4079"
-                  result="shape"></feBlend>
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"></feColorMatrix>
-                <feOffset dy="-5.15046"></feOffset>
-                <feGaussianBlur stdDeviation="6.18055"></feGaussianBlur>
-                <feComposite
-                  in2="hardAlpha"
-                  operator="arithmetic"
-                  k2="-1"
-                  k3="1"></feComposite>
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0.0392157 0 0 0 0 0.4 0 0 0 0 0.760784 0 0 0 0.35 0"
-                ></feColorMatrix>
-                <feBlend
-                  mode="normal"
-                  in2="shape"
-                  result="effect2_innerShadow_800_4079"></feBlend>
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"></feColorMatrix>
-                <feOffset dy="2.06018"></feOffset>
-                <feGaussianBlur stdDeviation="2.06018"></feGaussianBlur>
-                <feComposite
-                  in2="hardAlpha"
-                  operator="arithmetic"
-                  k2="-1"
-                  k3="1"></feComposite>
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"
-                ></feColorMatrix>
-                <feBlend
-                  mode="normal"
-                  in2="effect2_innerShadow_800_4079"
-                  result="effect3_innerShadow_800_4079"></feBlend>
-              </filter>
-              <linearGradient
-                id="paint0_linear_800_4079"
-                x1="3.33755"
-                y1="-18.9265"
-                x2="40.628"
-                y2="-12.2552"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#AAE0FE" stop-opacity="0"></stop>
-                <stop offset="0.896888" stop-color="#D0EBFA"></stop>
-                <stop offset="1" stop-color="#F9E0FF"></stop>
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_800_4079"
-                x1="27.4253"
-                y1="10.0447"
-                x2="12.1447"
-                y2="21.6539"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#0A66C2"></stop>
-                <stop offset="1" stop-color="#0AC2C2"></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-        </a>
-      </li>
-
-      <li>
-        <a
-          rel="noopener"
-          target="_blank"
-          href="https://github.com/rakesh-gupta29"
-          class="hover:border-opacity-70 transition-all duration-200 ease-default focus-visible:border-opacity-70 focus-visible:outline-none outline-none border-1 border-white border-opacity-0 rounded-full overflow-hidden grid"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10"
-            viewBox="0 0 40 41"
-            fill="none"
-          >
-            <g filter="url(#filter0_bii_800_4088)">
-              <circle
-                cx="20"
-                cy="20.1602"
-                r="20"
-                fill="url(#paint0_linear_800_4088)"
-                fill-opacity="0.2"></circle>
-            </g>
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M20.1922 12.5742C15.8948 12.5742 12.4141 16.0549 12.4141 20.3523C12.4141 23.7941 14.6405 26.7012 17.7323 27.7318C18.1212 27.7998 18.2671 27.5665 18.2671 27.3623C18.2671 27.1776 18.2574 26.5651 18.2574 25.9136C16.3031 26.2734 15.7975 25.4372 15.642 24.9997C15.5545 24.7761 15.1753 24.0858 14.8447 23.9011C14.5725 23.7552 14.1836 23.3955 14.835 23.3858C15.4475 23.376 15.885 23.9497 16.0309 24.183C16.7309 25.3595 17.849 25.0289 18.2962 24.8247C18.3643 24.3191 18.5685 23.9788 18.7921 23.7844C17.0615 23.5899 15.2531 22.9191 15.2531 19.944C15.2531 19.0981 15.5545 18.3981 16.0503 17.8536C15.9725 17.6591 15.7003 16.8619 16.1281 15.7924C16.1281 15.7924 16.7795 15.5882 18.2671 16.5897C18.8893 16.4147 19.5505 16.3271 20.2116 16.3271C20.8727 16.3271 21.5339 16.4147 22.1561 16.5897C23.6437 15.5785 24.2951 15.7924 24.2951 15.7924C24.7229 16.8619 24.4507 17.6591 24.3729 17.8536C24.8687 18.3981 25.1701 19.0884 25.1701 19.944C25.1701 22.9288 23.352 23.5899 21.6214 23.7844C21.9033 24.0275 22.1464 24.4941 22.1464 25.2233C22.1464 26.2637 22.1367 27.0998 22.1367 27.3623C22.1367 27.5665 22.2825 27.8096 22.6714 27.7318C24.2155 27.2105 25.5572 26.2181 26.5077 24.8943C27.4583 23.5705 27.9698 21.982 27.9702 20.3523C27.9702 16.0549 24.4895 12.5742 20.1922 12.5742Z"
-              fill="url(#paint1_linear_800_4088)"></path>
-            <defs>
-              <filter
-                id="filter0_bii_800_4088"
-                x="-30"
-                y="-29.8398"
-                width="100"
-                height="100"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix"
-                ></feFlood>
-                <feGaussianBlur in="BackgroundImageFix" stdDeviation="15"
-                ></feGaussianBlur>
-                <feComposite
-                  in2="SourceAlpha"
-                  operator="in"
-                  result="effect1_backgroundBlur_800_4088"></feComposite>
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_backgroundBlur_800_4088"
-                  result="shape"></feBlend>
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"></feColorMatrix>
-                <feOffset dy="2"></feOffset>
-                <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-                <feComposite
-                  in2="hardAlpha"
-                  operator="arithmetic"
-                  k2="-1"
-                  k3="1"></feComposite>
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"
-                ></feColorMatrix>
-                <feBlend
-                  mode="normal"
-                  in2="shape"
-                  result="effect2_innerShadow_800_4088"></feBlend>
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"></feColorMatrix>
-                <feOffset dy="-5"></feOffset>
-                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
-                <feComposite
-                  in2="hardAlpha"
-                  operator="arithmetic"
-                  k2="-1"
-                  k3="1"></feComposite>
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.35 0"
-                ></feColorMatrix>
-                <feBlend
-                  mode="normal"
-                  in2="effect2_innerShadow_800_4088"
-                  result="effect3_innerShadow_800_4088"></feBlend>
-              </filter>
-              <linearGradient
-                id="paint0_linear_800_4088"
-                x1="2.40005"
-                y1="-18.9265"
-                x2="39.6905"
-                y2="-12.2552"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#AAE0FE" stop-opacity="0"></stop>
-                <stop offset="0.896888" stop-color="#D0EBFA"></stop>
-                <stop offset="1" stop-color="#F9E0FF"></stop>
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_800_4088"
-                x1="26.832"
-                y1="11.613"
-                x2="11.4598"
-                y2="23.5651"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="white"></stop>
-                <stop offset="1" stop-color="#A1A1A1"></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a
-          rel="noopener"
-          target="_blank"
-          href="mailto:rakesh.rkgupta29@gmail.com"
-          class="hover:border-opacity-70 transition-all duration-200 ease-default focus-visible:border-opacity-70 focus-visible:outline-none outline-none border-1 border-white border-opacity-0 rounded-full overflow-hidden grid"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10"
-            viewBox="0 0 41 41"
-            fill="none"
-          >
-            <g filter="url(#filter0_bii_776_484)">
-              <circle
-                cx="20.7324"
-                cy="20.5806"
-                r="20"
-                fill="url(#paint0_linear_776_484)"
-                fill-opacity="0.2"></circle>
-            </g>
-            <path
-              d="M20.7322 20.5808L13.146 16.7432V15.8394C13.146 15.5727 13.2398 15.348 13.4275 15.1652C13.6152 14.9825 13.8374 14.8911 14.0943 14.8911H27.3701C27.627 14.8911 27.8492 14.9825 28.0369 15.1652C28.2246 15.348 28.3184 15.5727 28.3184 15.8394V16.7432L20.7322 20.5808ZM20.2581 21.529H21.2063L28.3184 17.8397V25.3221C28.3184 25.579 28.2246 25.8012 28.0369 25.9889C27.8492 26.1766 27.627 26.2704 27.3701 26.2704H14.0943C13.8374 26.2704 13.6152 26.1766 13.4275 25.9889C13.2398 25.8012 13.146 25.579 13.146 25.3221V17.8397L20.2581 21.529Z"
-              fill="url(#paint1_linear_776_484)"></path>
-            <defs>
-              <filter
-                id="filter0_bii_776_484"
-                x="-29.2676"
-                y="-29.4194"
-                width="100"
-                height="100"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix"
-                ></feFlood>
-                <feGaussianBlur in="BackgroundImageFix" stdDeviation="15"
-                ></feGaussianBlur>
-                <feComposite
-                  in2="SourceAlpha"
-                  operator="in"
-                  result="effect1_backgroundBlur_776_484"></feComposite>
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_backgroundBlur_776_484"
-                  result="shape"></feBlend>
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"></feColorMatrix>
-                <feOffset dy="2"></feOffset>
-                <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-                <feComposite
-                  in2="hardAlpha"
-                  operator="arithmetic"
-                  k2="-1"
-                  k3="1"></feComposite>
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"
-                ></feColorMatrix>
-                <feBlend
-                  mode="normal"
-                  in2="shape"
-                  result="effect2_innerShadow_776_484"></feBlend>
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"></feColorMatrix>
-                <feOffset dy="-5"></feOffset>
-                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
-                <feComposite
-                  in2="hardAlpha"
-                  operator="arithmetic"
-                  k2="-1"
-                  k3="1"></feComposite>
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0.729708 0 0 0 0 0.775315 0 0 0 0.35 0"
-                ></feColorMatrix>
-                <feBlend
-                  mode="normal"
-                  in2="effect2_innerShadow_776_484"
-                  result="effect3_innerShadow_776_484"></feBlend>
-              </filter>
-              <linearGradient
-                id="paint0_linear_776_484"
-                x1="3.13247"
-                y1="-18.5061"
-                x2="40.4229"
-                y2="-11.8348"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#AAE0FE" stop-opacity="0"></stop>
-                <stop offset="0.896888" stop-color="#D0EBFA"></stop>
-                <stop offset="1" stop-color="#F9E0FF"></stop>
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_776_484"
-                x1="27.2082"
-                y1="14.1702"
-                x2="15.3128"
-                y2="26.1978"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#0057FF"></stop>
-                <stop offset="1" stop-color="#00F0FF"></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    <div class="open-to-work-wrapper px-10  opacity-0 overflow-hidden transition-all duration-300 ease-default grid gap-2 border border-neutral-700 bg-gradient-to-b from-neutral-900 to-neutral-800" style="grid-template-rows: 0fr; max-height: 0;">
+      <div class="overflow-hidden">
+        <span class="font-medium text-3xl block">
+          Actively looking for new opportunities
+        </span>
+        <div class="grid gap-3 mt-3 mb-2">
+          <div class="flex gap-3 items-center pt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+            </svg>
+            <span class="text-xl font-regular block mt-1 text-white">
+              Software Engineer, Frontend Developer
+            </span>
+          </div>
+          <div class="flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+            </svg>
+            <span class="text-xl font-regular block mt-1 text-white">
+              Product based startups 
+            </span>
+          </div>
+          <div class="flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+            </svg>
+            <span class="text-xl font-regular block mt-1 text-white">
+              Can commit over 40 hours per week
+            </span>
+          </div>
+          <div class="flex gap-3">
+            <div class="flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+            </div>
+            <span class="text-xl font-regular block mt-1 text-white"
+              >Preferably remote or based in Noida, Bangalore, Indore — open to relocation.</span
+            >
+          </div>
+          <div class="flex justify-start mt-5 pl-1">
+            <a
+            target="_blank"
+              href="mailto:rakesh.rkgupta29@gmail.com"
+              class="contact-btn text-black font-regular py-2 px-8 xl:px-10 xl:py-[10px] text-base md:text-lg font-semibold rounded-full focus-visible:outline-white outline-transparent hover:outline-white transition-all duration-300 ease-default outline outline-1 outline-offset-2"
+            >
+              <span class="translate-y-1 font-semibold block"> Hire me</span>
+            </a>
+            <button
+              type="button"
+              onclick="document.querySelector('.open-to-work-wrapper').classList.remove('open')"
+              class="text-white/80 hover:text-white font-regular py-2 px-8 xl:px-10 xl:py-[10px] text-base md:text-lg font-semibold rounded-full transition-all duration-300 ease-default"
+            >
+              <span class="translate-y-1 font-semibold block">Close</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </nav>
 </header>
 
@@ -408,4 +481,25 @@
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(206, 206, 251, 0.12);
   }
-</style>
+  .contact-btn {
+      background: linear-gradient(180deg, #d5bbf0, #dad6ff);
+    }
+    .feedback-text {
+      background-image: linear-gradient(
+        174deg,
+        #fff -22.74%,
+        rgba(255, 255, 255, 0) 175.47%
+      );
+    }
+
+    .open-to-work-wrapper.open {
+      grid-template-rows: 1fr !important;
+      max-height: 500px !important;
+      opacity: 1 !important;
+      padding-top: 2.5rem !important;
+      padding-bottom: 2.5rem !important;
+
+    }
+  </style>
+
+
