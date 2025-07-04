@@ -502,4 +502,25 @@
     }
   </style>
 
+<script>
+  let lastScrollTop = 0;
+  let scrollThreshold = 100;
+
+  function handleScroll() {
+    const wrapper = document.querySelector('.open-to-work-wrapper');
+    if (!wrapper || !wrapper.classList.contains('open')) return;
+    
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollDistance = Math.abs(currentScrollTop - lastScrollTop);
+    
+    if (scrollDistance > scrollThreshold) {
+      wrapper.classList.remove('open');
+    }
+    
+    lastScrollTop = currentScrollTop;
+  }
+
+  window.addEventListener('scroll', handleScroll);
+</script>
+
 
