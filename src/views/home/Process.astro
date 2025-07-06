@@ -8,38 +8,14 @@ import skills from "../../static/skills.json";
   >
     <h3 class="font-semibold">A bit about me</h3>
     <h6 class="text-white text-opacity-80 pt-7 max-w-xl leading-relaxed">
-      My journey started at a design agency where I honed my eye for aesthetics
-      and user experience.
+   My journey started at a design agency, where I developed a strong eye for visuals and user experience. That design-first mindset still drives how I build—focusing on clean interfaces, clear interactions, and real-world usability.
     </h6>
 
-    <h6 class="text-white text-opacity-80 pt-7 max-w-2xl leading-relaxed">
-      Now, I bring that design-focused mindset to my product development role,
-      bridging the gap between creative concepts and technical implementation. I
-      love solving complex problems with clean, efficient code.
+    <h6 class="text-white text-opacity-80 pt-7 max-w-xl leading-relaxed">
+      Now, in product development, I move fast, take ownership, and thrive in early-stage environments where speed and focus matter. I’m comfortable in the chaos and always shipping.
     </h6>
   </div>
-  <div class="w-container blade-bottom-padding-lg">
-    <div class="flex flex-wrap gap-x-6 max-w-2xl xl:max-w-4xl gap-y-6">
-      {
-        skills.map((elem) => {
-          return (
-            <article>
-              <div class="grid mx-auto place-content-center h-[4.5rem]   rounded-xl p-[1px] skills-card w-[5rem] mb-2 ">
-                <img
-                  src={elem.src}
-                  alt={elem.title}
-                  class="h-9 px-3 w-auto object-contain object-center"
-                />
-              </div>
-              <span class="text-white text-sm text-center p-1 block font-regular  text-opacity-80 ">
-                {elem.title}
-              </span>
-            </article>
-          );
-        })
-      }
-    </div>
-  </div>
+
 </section>
 
 <style>

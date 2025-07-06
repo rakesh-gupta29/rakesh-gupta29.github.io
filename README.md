@@ -65,3 +65,26 @@ I'm always happy to connect and collaborate on interesting projects. <br />You c
 
 - GitHub pages
 - Google fonts
+
+  <div class="w-container blade-bottom-padding-lg">
+    <div class="flex flex-wrap gap-x-6 max-w-2xl xl:max-w-4xl gap-y-6">
+      {
+        skills.map((elem) => {
+          return (
+            <article>
+              <div class="grid mx-auto place-content-center h-[4.5rem]   rounded-xl p-[1px] skills-card w-[5rem] mb-2 ">
+                <img
+                  src={elem.src}
+                  alt={elem.title}
+                  class="h-9 px-3 w-auto object-contain object-center"
+                />
+              </div>
+              <span class="text-white text-sm text-center p-1 block font-regular  text-opacity-80 ">
+                {elem.title}
+              </span>
+            </article>
+          );
+        })
+      }
+    </div>
+  </div>

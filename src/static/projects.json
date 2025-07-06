@@ -19,7 +19,7 @@
   {
     "title": "Buyerr",
     "tech": ["React", "Laravel", "TailwindCSS", "GSAP"],
-    "desc": "Buyer is a full-service strategic martech firm. They tailor solutions for their customers in the areas of employer branding, search engine optimization, social media strategies, and traditional print & online media negotiation and placement.",
+    "desc": "Buyerr is a full-service strategic martech firm. They tailor solutions for their customers in the areas of employer branding, search engine optimization, social media strategies, and traditional print & online media negotiation and placement.",
     "isStatic": true,
     "poster": "/projects/buyerr.webp",
     "url": "https://buyerr.in/"
@@ -27,7 +27,7 @@
   {
     "title": "Varaha",
     "tech": ["React", "TailwindCSS", "GSAP", "AWS"],
-    "desc": "Varaha specializes in monetizing, standardizing, and trading carbon credits using technologies like remote sensing and blockchain. We crafted their online identity and developed dedicated landing pages for their projects.",
+    "desc": "They are enhancing EV charging stations and solutions through their patented technologies, products, and designs, and are actively constructing the largest and most cohesive network of chargers.",
     "coverVideo": "/projects/varaha_video.mp4",
     "overlay": "/projects/varaha_overlay.webp",
     "poster": "/projects/efp.webp",
@@ -48,7 +48,7 @@
     "tech": ["React", "Laravel", "TailwindCSS", "GSAP"],
     "isProgress": true,
     "isStatic": false,
-    "desc": "Supreme Group is the largest and tier-1 supplier of nonwoven fabrics and automotive NVH solutions. We modernised their website and assisted in establishing a global identity retaining their authentic principles and brand identity.",
+    "desc": "Supreme Group is the largest and Tier-1 supplier of nonwoven fabrics and automotive NVH solutions. We modernised their website and assisted in establishing a global identity retaining their authentic principles and brand identity.",
     "overlay": "/projects/supreme_overlay.svg",
     "coverVideo": "/projects/supreme_video.mp4",
     "url": "https://supreme-group.vercel.app/"
@@ -84,7 +84,7 @@
   {
     "title": "Xero",
     "tech": ["React", "TailwindCSS", "GSAP"],
-    "desc": "Xero is a startup delivering lightweight, economic top-tier electric two-wheelers, We've developed a website to enhance brand visibility and awareness among their target audience.",
+    "desc": "Xero is a startup delivering lightweight, economic top‑tier electric two‑wheelers. We’ve developed a website to enhance brand visibility and awareness among their target audience.",
     "isStatic": true,
     "poster": "/projects/xero.webp",
     "url": "https://xeroev.co/"
@@ -109,7 +109,7 @@
   {
     "title": "ProsParity",
     "tech": ["React", "GSAP", "TailwindCSS"],
-    "desc": "ProsParity is aiming to build India's largest platform to enable financing for electric mobility. I was part of a two-person team that created the initial brand design and web presence, tweaking and aligning the website with their updated brand identity and positioning.",
+    "desc": "ProsParity aims to build India's largest platform enabling financing for electric mobility. I was part of a two-person team that created the initial brand design and web presence, tweaking and aligning the website with their updated brand identity and positioning.",
     "isStatic": true,
     "poster": "/projects/prosparity.jpeg",
     "url": "https://prosparity.in/"
