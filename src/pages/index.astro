@@ -1,21 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import AboutMe from "../views/home/AboutMe.astro";
 import Banner from "../views/home/Banner.astro";
-import Projects from "../views/home/Projects.astro";
-import Skills from "../views/home/Skills.astro";
-import Process from "../views/home/Process.astro";
 import Contact from "../views/home/Contact.astro";
-import Experience from "../views/home/Experience.astro";
+import WorkExperience from "../views/home/WorkExperience.astro";
 
 ---
 
 <Layout
-  title="Rakesh Gupta | Frontend Developer"
-  desc="Discover the work of Rakesh Gupta - Frontend developer with over three years of industry experience."
+  title="Rakesh Gupta | Software Developer"
+  desc="Discover the work of Rakesh Gupta - Software developer with over four years of industry experience."
 >
   <Banner />
-  <Process />
-  <Experience />
-  <Projects />
-  <Contact />
+  <AboutMe />
+  <WorkExperience />
+  <Contact title="Got something for me?" desc1="We should queue up a" desc2="a time to chat." />
 </Layout>

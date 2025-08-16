@@ -27,7 +27,7 @@ import "../index.css";
     <meta name="googlebot" content="index, follow" />
     <meta
       name="keywords"
-      content="Rakesh Gupta, Frontend Developer, React Developer, Next.js, Svelte, UI/UX, Web Development, CSS, TailwindCSS, Typescript, Firebase, MongoDB, NodeJS, ExpressJS, Golang, MERN Stack, HTML, CSS, Indore, India, JavaScript, Portfolio,"
+      content="Rakesh Gupta, Software Developer, React Developer, Next.js, Svelte, UI/UX, Web Development, CSS, TailwindCSS, Typescript, Firebase, MongoDB, NodeJS, ExpressJS, Golang, MERN Stack, HTML, CSS, Indore, India, JavaScript, Portfolio, Elixir, Liveview, Phoenix, Redrob, Innogent, Blacksof, Buyerr, Varaha, Xero, Innvolution, EF Polymer, ProsParity"
     />
 
     <meta name="author" content="Rakesh Gupta (rakesh.rkgupta29@gmail.com)" />
@@ -92,13 +92,13 @@ import "../index.css";
       gtag("config", "G-4QK4W491DC");
     </script>
   </head>
-  <body class="max-w-screen-xl mx-auto border-l border-r border-neutral-800">
+  <body class="max-w-screen-xl bg-black mx-auto border-l border-r min-h-lvh flex flex-col border-neutral-800">
     <div class="fixed pointer-events-none z-0 inset-0" aria-hidden="true">
       <canvas id="body-canvas"></canvas>
     </div>
 
     <Header />
-    <div class="relative">
+    <div class="relative flex-1">
       <slot />
     </div>
     <Footer />
@@ -232,7 +232,7 @@ import "../index.css";
         this.context.translate(translateX, translateY);
         this.context.beginPath();
         this.context.arc(x, y, size, 0, 2 * Math.PI);
-        this.context.fillStyle = `rgba(216, 216, 216, ${alpha * 0.4})`;
+        this.context.fillStyle = `rgba(216, 216, 216, ${alpha * 0.5})`;
         this.context.fill();
         this.context.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
         if (!update) {

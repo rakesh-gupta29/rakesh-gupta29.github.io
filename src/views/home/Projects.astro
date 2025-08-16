@@ -7,7 +7,7 @@ import Project from "../../components/Project.astro";
   <div
     class="contribution-graph max-w-[100vw] oveflow-hidden relative min-h-[250px] projects-title-wrapper"
   >
-    <div class="max-w-[100vw] overflow-hidden">
+    <div class="max-w-[100vw] overflow-hidden mt-16 pt-1">
       <svg
         width="1792"
         height="712"
@@ -514,13 +514,15 @@ import Project from "../../components/Project.astro";
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   gsap.registerPlugin(ScrollTrigger);
+
   gsap.fromTo(
     ".contribution-graph path",
     { opacity: 0 },
     {
       opacity: 1,
       stagger: {
-        from: "end",
+        each: 0.05,
+        from: "random",
         amount: 1,
       },
       duration: 2,

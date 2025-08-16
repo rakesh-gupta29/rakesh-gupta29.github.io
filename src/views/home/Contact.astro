@@ -1,5 +1,10 @@
 ---
-
+interface Props {
+  title: string;
+  desc1: string;
+  desc2: string;
+}
+const { title, desc1, desc2 } = Astro.props;
 ---
 
 <section
@@ -13,16 +18,16 @@
       <h6
         class="text-transparent font-light bg-clip-text feedback-text leading-snug"
       >
-        Got something for me?
+        {title}
       </h6>
 
       <h3
         class="text-transparent font-medium pt-1 bg-clip-text bg-contact-title"
       >
-        We should queue up a
+        {desc1}
       </h3>
       <h3 class="text-transparent bg-clip-text bg-contact-title font-medium">
-        a time to chat.
+        {desc2}
       </h3>
     </div>
 
@@ -31,7 +36,7 @@
         href="mailto:rakesh.rkgupta29@gmail.com"
         class="contact-btn text-black font-regular py-2 px-8 xl:px-10 xl:py-[10px] text-base md:text-lg font-semibold rounded-full focus-visible:outline-white outline-transparent hover:outline-white transition-all duration-300 ease-default outline outline-1 outline-offset-2"
       >
-        <span class="translate-y-1 font-semibold block"> Send a mail </span>
+        <span class="font-semibold block text-lg">Send a mail</span>
       </a>
     </div>
   </div>
