@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import NoteCard from "../../components/NoteCard.astro";
+
+const notes = await getCollection("notes");
+---
+
+<Layout
+    title="Rakesh Gupta | Blog"
+    desc="Notebook of Rakesh Gupta, where he shares his thoughts and learning."
+>
+    <section class="blade-top-padding-lg border-b border-neutral-800">
+        <div
+            class="h-full relative blade-bottom-padding flex justify-end flex-col w-container blade-top-padding-lg gap-4 md:gap-6 lg:gap-5"
+        >
+            <div class="flex">
+                <h3
+                    class="home-banner-title home-title text-shadow-title bg-title-gradient bg-clip-text text-transparent font-medium leading-tight mt-1 ml-1"
+                >
+                    My Notes
+                </h3>
+            </div>
+            <span
+                class="text-white md:text-xl text-base text-opacity-80 md:pl-2 home-banner-subtitle max-w-xl font-light leading-relaxed"
+            >
+                It's not a blog, but collection of random thoughts, opinions and
+                rants. Here, I document my learnings, thoughts and opinions.
+            </span>
+        </div>
+    </section>
+
+    <div class="bg-black blade-top-padding-sm blade-bottom-padding-sm">
+     <div class="w-container space-y-8">
+        {notes.map((note: any) => <NoteCard data={note.data} />)}
+     </div>
+    </div>
+</Layout>

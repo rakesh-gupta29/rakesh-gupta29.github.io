@@ -1,0 +1,58 @@
+---
+import Tag from "./Tag.astro";
+
+const { data } = Astro.props;
+
+
+const { title, description, pubDate, tags, slug } = data;
+---
+
+<article
+    class="rounded-lg border border-neutral-800 overflow-hidden rounded-lg p-6 hover:border-neutral-700 transition duration-300"
+>
+    <span class="text-white text-sm block pb-3 text-opacity-80 font-light"
+        >{pubDate}</span
+    >
+
+    <a
+        href={`/notes/${slug}`}
+        class="hover:text-pink2 text-white transition duration-300 focus-visible:text-pink2 focus-visible:outline-none focus-visible:underline text-2xl font-medium"
+    >
+        {title}
+    </a>
+    <span
+        class="block max-w-2xl text-white text-lg line-clamp-2 pt-3 text-opacity-80 font-light"
+        >{description}</span
+    >
+    <div
+        class="flex justify-between items-center w-full border-t border-neutral-800 mt-6 pt-5"
+    >
+        <div class="flex gap-3">
+            {
+                tags.map((tag: string) => (
+                    <Tag tag={tag} href={`/notes/tag/${tag}`} />
+                ))
+            }
+        </div>
+
+        <a
+            href={`/notes/${slug}`}
+            class="font-medium text-lg border-b border-white leading-tight focus-visible:outline-none flex items-center gap-2 font-regular text-white hover:text-pink2 hover:border-pink2 cursor-pointer focus-visible:text-pink2 focus-visible:border-pink2 transition"
+        >
+            Read now
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-3"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+            </svg>
+        </a>
+    </div>
+</article>

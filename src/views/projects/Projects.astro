@@ -1,6 +1,6 @@
 ---
 import projects from "../../static/projects.json";
-import Project from "../../components/Project.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
 ---
 
 <section class="pt-4 blade-bottom-padding-lg">
@@ -500,11 +500,11 @@ import Project from "../../components/Project.astro";
   </div>
 
   <div
-    class="grid grid-cols-1 gap-y-8 gap-x-6 xl:gap-y-8 w-container blade-top-padding-lg blade-top-margin-sm"
+    class="grid grid-cols-1 gap-y-8 xl:gap-y-8 w-container blade-top-padding-lg blade-top-margin-sm"
   >
     {
       projects.map((elem: any) => {
-        return <Project data={elem} />;
+        return <ProjectCard data={elem} />;
       })
     }
   </div>

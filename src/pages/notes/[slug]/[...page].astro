@@ -1,0 +1,54 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import { render } from 'astro:content';
+import Tag from '../../../components/Tag.astro';
+
+export async function getStaticPaths() {
+	const notes = await getCollection('notes');
+	return notes.map((note:any) => ({
+		params: { slug: note.slug },
+		props: note,
+	}));
+}
+type Props = CollectionEntry<'notes'>;
+
+const note = Astro.props;
+const {data} = note 
+const { title, description, pubDate, tags, slug } = data;
+
+const { Content } = await render(note);
+---
+
+
+<Layout
+    title={`blog on ${title} - written by Rakesh Gupta`}
+    desc="Notebook of Rakesh Gupta, where he shares his thoughts and learning."
+>
+    <section class="bg-black blade-top-padding-lg border-b border-neutral-800">
+        <div
+            class="h-full relative blade-bottom-padding flex justify-end flex-col w-container blade-top-padding-lg gap-4 md:gap-6 lg:gap-5"
+        >
+        <span class="text-white text-sm block pb-1 text-opacity-80 font-light">{pubDate}</span>
+                <h3
+                    class="home-banner-title home-title text-shadow-title bg-title-gradient bg-clip-text text-transparent font-medium leading-tight mt-1 ml-1"
+                >
+                    {title}
+                </h3>
+				<span class="text-white text-lg block max-w-2xl leading-normal pl-1 text-opacity-80 font-light">{description}</span>
+                <div class="flex gap-3">
+                    {tags.map((tag:string) => (
+                        <Tag tag={tag} href={`/notes/tag/${tag}`} />
+                    ))}
+                </div>
+           
+        </div>
+    </section>
+<div class="bg-black blade-top-padding-sm blade-bottom-padding-sm">
+	<div class="w-container font-regular">
+		<Content />
+	</div>
+</div>
+
+
+</Layout>

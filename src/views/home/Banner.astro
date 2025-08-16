@@ -10,68 +10,17 @@
   >
     <div class="flex">
       <h3
-        class="home-banner-title home-title text-shadow-title bg-title-gradient opacity-0 scale-[0.98] origin-bottom bg-clip-text text-transparent font-medium leading-tight mt-1 ml-1"
+        class="home-banner-title home-title text-shadow-title bg-title-gradient  bg-clip-text text-transparent font-medium leading-tight mt-1 ml-1"
       >
       
         Hey there! *waves* 
       </h3>
     </div>
     <span
-      class="text-white md:text-xl text-base text-opacity-80 md:pl-2 home-banner-subtitle max-w-xl opacity-0 scale-[0.98] origin-bottom font-light leading-relaxed"
+      class="text-white md:text-xl text-base text-opacity-80 md:pl-2 home-banner-subtitle max-w-xl font-light leading-relaxed"
     >
     I'm Rakesh. I&apos;ve been working as a software developer for more than four years, creating UX-first experiences with code, creativity, and pragmatism.
     </span>
   </div>
 </section>
 
-<style>
-  @keyframes slideandappear {
-    from {
-      opacity: 0;
-      scale: 0.98;
-      transform: translateY(-16px);
-    }
-    to {
-      scale: 1;
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  @keyframes appear {
-    from {
-      opacity: 0;
-      scale: 0.98;
-    }
-    to {
-      scale: 1;
-      opacity: 1;
-    }
-  }
-
-  .home-banner-title,
-  .home-banner-subtitle,
-  .home-banner-cta {
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-name: appear;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .home-banner-chip {
-    animation-duration: 400ms;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    animation-name: appear;
-  }
-  .home-banner-title {
-    animation-delay: 0s;
-  }
-  .home-banner-subtitle {
-    animation-delay: 200ms;
-  }
-  .home-banner-cta {
-    animation-delay: 400ms;
-  }
-  .home-banner-chip {
-    animation-delay: 0ms;
-  }
-</style>

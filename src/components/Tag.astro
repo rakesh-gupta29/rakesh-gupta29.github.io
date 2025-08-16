@@ -1,0 +1,14 @@
+---
+interface Props {
+    tag: string;
+    href: string;
+}
+const { tag, href } = Astro.props;
+---
+
+<a
+    class="text-white border border-neutral-600 bg-neutral-900 hover:text-pink2 hover:border-pink2 cursor-pointer focus-visible:text-pink2 focus-visible:border-pink2 transition px-3 pt-[2px] pb-1 text-sm rounded-full text-opacity-80 font-light"
+    href={href}
+>
+    {tag}
+</a>
