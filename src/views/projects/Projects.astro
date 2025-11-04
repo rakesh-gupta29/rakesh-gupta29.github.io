@@ -484,17 +484,17 @@ import ProjectCard from "../../components/ProjectCard.astro";
       class="relative -mt-[5rem] -translate-y-5 lg:absolute left-0 right-0 bottom-0 top-0 md:top-auto max-w-xl mx-auto grid place-content-center text-center px-5"
     >
       <h2
-        class="text-shadow-title bg-title-gradient md:block hidden bg-clip-text text-transparent font-medium relative"
+        class="text-shadow-title before-text bg-title-gradient md:block hidden bg-clip-text text-transparent font-medium relative"
       >
-      Before the 
-       <br /> Product Days
+        Before the
+        <br /> Product Days
       </h2>
 
       <h3
-        class="text-shadow-title bg-title-gradient md:hidden block bg-clip-text text-transparent font-medium relative"
+        class="text-shadow-title bg-title-gradient before-text md:hidden block bg-clip-text text-transparent font-medium relative"
       >
-      Before the 
-      <br /> Product Days
+        Before the
+        <br /> Product Days
       </h3>
     </div>
   </div>
@@ -509,28 +509,30 @@ import ProjectCard from "../../components/ProjectCard.astro";
     }
   </div>
 </section>
-
+<style>
+  .contribution-graph path {
+    opacity: 0;
+  }
+  .before-text {
+  }
+</style>
 <script>
   import { gsap } from "gsap";
-  import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-  gsap.registerPlugin(ScrollTrigger);
 
-  gsap.fromTo(
+  const tl = gsap.timeline({});
+
+  tl.fromTo(
     ".contribution-graph path",
     { opacity: 0 },
     {
       opacity: 1,
-      stagger: {
-        each: 0.05,
-        from: "random",
-        amount: 1,
-      },
+      stagger: { each: 0.05, from: "random", amount: 1 },
       duration: 2,
-      scrollTrigger: {
-        start: "top 70%",
-        trigger: ".contribution-graph",
-        toggleActions: "play reverse play reverse",
-      },
     },
+  ).fromTo(
+    ".before-text",
+    { opacity: 0, y: 10 },
+    { opacity: 1, y: 0, duration: 1.0 },
+    0.5,
   );
 </script>

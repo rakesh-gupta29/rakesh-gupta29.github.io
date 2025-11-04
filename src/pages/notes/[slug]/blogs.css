@@ -1,0 +1,12 @@
+.blog-content p,
+.blog-content ul {
+  @apply text-lg leading-[1.8] font-regular pr-24 max-w-screen-lg  text-opacity-100;
+}
+
+.blog-content ul {
+  @apply list-disc pl-6 block;
+}
+
+.blog-content h5 {
+  @apply text-2xl leading-relaxed font-regular pr-20 pt-10 pb-3 font-semibold text-white text-opacity-90;
+}

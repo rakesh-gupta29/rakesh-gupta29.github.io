@@ -1,0 +1,63 @@
+---
+title: "My experience with Cursor and other coding assistants"
+slug: "my-experience-with-coding-assistants"
+description: "TLDR: We should take it as an IDE + something and always keep the driving seat."
+tags: ["tooling", "rant"]
+pubDate: "Oct 3, 2025"
+---
+
+import Image from "../../components/Image.astro";
+
+##### The background
+
+I was sitting in the corner with dual display setups fixing paddings, using Neovim and listening to Bhojpuri songs; still, why do people need those scroll animations on marketing websites? Someone from the sales team walks up to me and tells me that there is a new tool which can answer questions like: what is a closure in JS? Pretty impressive. It's called ChatGPT. My first impression: they could have done better with the name.
+
+Cut to today, my setup looks like this:
+
+<Image
+  src="/experience/setup.png"
+  alt="My current development setup"
+  height={600}
+  caption="Image on my IDE. Yes. I am a React junkie"
+/>
+
+I use Claude code inside Cursor - from using Neovim to this. It's a big change.
+
+##### The goods
+
+When you code in something which exists in the resume of every intern, every company has a codebase in this, the AI has got enough meat to train on, and naturally, will be good.
+
+So, no surprises that GPTs are good at React, and even Shadcn, Tailwind and other popular libraries that go well with that.
+
+- I now have to type less - the mechanical autofills, boilerplates (React has a lot of that!) and import stuff. The bottom 30% of the typing is already done by these.
+- The context that it has: If I tell it that there is a function for this in the code, don't define it again. It generally does find that and uses that.
+- It is good with documentation scavenging: What is the prop which stops a Dropdown menu from the default portal renders? Believe me, it did find that.
+
+##### The Bads
+
+- When it comes to writing JS code, it generally struggles more. e.g. utility functions, taking into account the failures and other things.
+- If you cannot define exactly with concrete flow, it can always mess that up - what people fail to understand is that 10 developers working on a codebase cannot follow what they like but have to follow the project guidelines. Although, I tried with the cursor rules files and all, sometimes it would deviate.
+- Emitting non PR ready code: if I just check that the code is working and forward it for merge, I will get some embarrassing comments. Has happened before.
+- you have to read a lot of content who you have not written - harder to reason and understand and find pitfalls.
+
+##### The recommendations
+
+What all you can delegate to the AI and have good sleep:
+
+- The code you don't give a f\*ck about - code which feels like physics - proper rules and guardrails, not like maths where you can have multiple paths to arrive at the right answer.
+- The code I have seen thousand times: I have lost the count of how many useState hooks I have called. So, probably, it's time to delegate that now.
+- The solved problems - How to add a middleware in NextJS - that's a solved problem. Let AI replicate that.
+
+##### The conclusions
+
+- Code is not a deliverable, an asset for AI - it takes it as a medium to implement what you asked it to do and does not think that this is what you will look at for next 2 years, 8 hours a day.
+
+- Good enough is good for AI - If it does what you asked it to do, it marks the job done.
+- A job should not be the place to apply knowledge - but to learn, connect and grow. If you allow AI to do a major chunk, learning takes a back seat.
+
+- It's a replication tool, not a thinking machine: finds out patterns, replicates that and achieves what you asked.
+- Never use while learning - it should be done banging your head, going through the docs and trying to replicate the things.
+
+<br />
+<br />
+But please, start using it for day to day work. Give it a try!

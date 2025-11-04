@@ -1,0 +1,48 @@
+---
+export interface Props {
+  src: string;
+  alt: string;
+  height?: number;
+  caption?: string;
+  className?: string;
+}
+
+const { src, alt, height = 400, caption, className = "" } = Astro.props;
+---
+
+<figure class={`my-6 ${className}`}>
+  <div
+    class="relative overflow-hidden rounded-lg bg-neutral-900"
+    style={`height: ${height}px;`}
+  >
+    <img
+      src={src}
+      alt={alt}
+      class="w-full h-full object-cover"
+      loading="lazy"
+      height={height}
+    />
+  </div>
+  {
+    caption && (
+      <figcaption class="mt-2 text-sm text-neutral-400 text-center font-light">
+        {caption}
+      </figcaption>
+    )
+  }
+</figure>
+
+<style>
+  figure {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    transition: transform 0.3s ease;
+  }
+
+  figure:hover img {
+    transform: scale(1.02);
+  }
+</style>
